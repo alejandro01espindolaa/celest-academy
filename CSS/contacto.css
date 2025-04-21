@@ -46,7 +46,6 @@
     margin-bottom: 10px;
     padding-left: 2%;
     padding-right: 2%;
-        font-size: 1.3em;
 
 
   }
@@ -117,6 +116,7 @@
       width: 98%;
       max-width: 100%;
       white-space: nowrap;
+      margin-bottom: 1%;
     }
 
     form {
@@ -139,7 +139,29 @@
       }
 
       .titulo-seccion {
-        font-size: 1.2em;
+        font-size: 1.4em;
       
       }
+
+      .campo-formulario {
+
+        margin-bottom: .5em;
+        text-align: left;
+      }
+
+      h3{
+        font-size: .8;
+      }
+
+
+      .detalle-contacto {
+        flex: 1 1 100px;
+        max-width: 350px;
+        text-align: center;
+      }
+
+      
+      
+
+
   }
