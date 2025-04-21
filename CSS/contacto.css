@@ -116,6 +116,7 @@
     .detalle-contacto {
       width: 98%;
       max-width: 100%;
+      white-space: nowrap;
     }
 
     form {
@@ -131,5 +132,14 @@
         max-width: 98%;
        
     
+      }
+
+      #regular{
+        white-space: nowrap;
+      }
+
+      .titulo-seccion {
+        font-size: 1.2em;
+      
       }
   }
