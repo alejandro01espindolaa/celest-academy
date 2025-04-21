@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainlogo{
+    width: 12em;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+body {
+    background: #1d1d1d;
+    overflow-x: hidden;
+    padding-top: 1%;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent; /* Fondo transparente */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: aqua; /* Scroll naranja */
+    border-radius: 10px;
+    border: 3px solid transparent; /* Para dar un efecto más limpio */
+    background-clip: padding-box;
+}
+
+#logotit{
+    display: flex;
+}
+
+
+
+body{
+    background-color: black;
+}
+
+
+
+#navbar {
+    
+    display: flex;
+    justify-content:space-between;
+
+    align-items: center;
+    background: linear-gradient(170deg, #000000, #1b1b1b);
+    padding: 1%;
+    border-style: double;
+    border-color: rgb(60, 255, 255);  
+    border-radius: 15px;
+}
+
+
+#navbar a {
+    color: rgb(101, 255, 255);
+    text-decoration: none;
+    position: relative;
+   
+}
+
+#navbar a:hover {
+    color: rgb(199, 255, 255);
+    transition: width 0.3s;
+}
+
+#navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background:  rgb(199, 255, 255);
+    color:  rgb(199, 255, 255);
+    left: 0;
+    bottom: 0;
+    transition: width 0.4s;
+    
+}
+
+#navbar a:hover::after {
+    width: 100%;
+}
+
+
+#estelar {
+    padding-left: 2%;
+    padding-right: 2%; 
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 2.8em;
+    font-weight: 400;
+    font-style: normal;
+    color: aqua;
+}
+
+#menubtn{
+    color: aqua;
+    background-color: rgb(19, 19, 19);
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: double;
+    border-color: aqua;
+    font-size: 2.5em;
+    padding: .8%;
+    padding-left: .5%;
+    padding-right: .5%;
+    z-index: 1001;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+
+}
+
+#menubtn:hover {
+    color: rgb(101, 255, 255);
+    background-color: #444444;
+    border-color: rgb(101, 255, 255);
+    border-style: double;
+    transition: 0.3s;
+}
+
+#menubtn.active {
+    color: rgb(101, 255, 255);
+    transform: rotate(180deg);
+}
+
+
+#navmenu{
+    position: fixed;
+    top:  0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #111);
+    padding-top: 80px;
+    transition: .5s;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#navmenu.active {
+    right: 0;
+}
+
+#navmenu ul {
+    list-style: none;
+}
+
+#navmenu ul li {
+    margin: 20px 0;
+    padding: 0 30px;
+    list-style-type: none; 
+    
+}
+
+#navmenu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: lighter;
+    font-family: "Chakra Petch", sans-serif;
+    transition: all 0.3s;
+    position: relative;
+    padding: 5px 0;
+    display: block;
+
+}
+
+#navmenu ul li a:hover {
+    color: rgb(101, 255, 255);
+}
+
+#navmenu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, aqua, rgb(101, 255, 255));
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+#navmenu ul li a:hover::after {
+    width: 100%;
+}
+
+#lil{
+    font-family: "Chakra Petch", sans-serif;
+    color: white;
+    font-size: 250%;
+    font-weight: 150;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #ffcc00;
+    transition: all 0.6s;
+
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff9500, #ffcc00);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+h1{
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+
+}
+
+@media (max-width: 768px) {
+    #estelar {
+      
+        font-size: 175%;
+        font-weight:bold  ;
+       
+    
+    }
+}

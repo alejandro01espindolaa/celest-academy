@@ -1,0 +1,145 @@
+/* Footer */
+footer {
+    background: linear-gradient(to right, #141414, #353535);
+    padding: 60px 0 20px;
+    margin-top: 40px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight:bold;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-about {
+    color: #d0d0d0;
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-title {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(to right, aqua, rgb(101, 255, 255));
+    bottom: 0;
+    left: 0;
+        font-family: "Chakra Petch", sans-serif;
+
+}
+
+.footer-links {
+    list-style: none;
+    font-size: 25px;
+    font-family: "Chakra Petch", sans-serif;
+
+
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+
+    
+}
+
+.footer-links a {
+    color: #d0d0d0;
+    text-decoration: none;
+    font-size: 28px;
+    transition: all 0.3s;
+    position: relative;
+    padding-left: 15px;
+}
+
+.footer-links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    color: aqua;
+}
+
+.footer-links a:hover {
+    color: aqua;
+    padding-left: 20px;
+}
+
+.footer-column h4 {
+    color: #d0d0d0;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    color: #a0a0a0;
+    
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-links a {
+        color: #d0d0d0;
+        text-decoration: none;
+        font-size: .9em;
+        transition: all 0.6s;
+        position: relative;
+        padding-left: 15px;
+    }
+
+
+
+}

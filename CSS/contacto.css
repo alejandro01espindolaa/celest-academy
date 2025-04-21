@@ -1,0 +1,118 @@
+/* Sección de Contacto */
+#contacto {
+    background: linear-gradient(160deg, #020202, #1b1b1b);
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.7em;
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
+
+
+  }
+  
+  .contenedor {
+
+    padding: 0 5%;
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+
+  }
+  
+  .titulo-seccion {
+    font-size: 2.5em;
+    color: aqua;
+    margin-bottom: 40px;
+  }
+  
+  .informacion-contacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre elementos */
+  }
+  
+
+  .detalle-contacto {
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  
+  .detalle-contacto h3 {
+    color: aqua;
+    margin-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+        font-size: 1.3em;
+
+
+  }
+  
+  .detalle-contacto p {
+    margin: 0;
+
+  }
+  
+  form {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .campo-formulario {
+
+    margin-bottom: 1.2em;
+    text-align: left;
+  }
+  
+  .campo-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(133, 255, 255);
+  }
+  
+  .campo-formulario input,
+  .campo-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #21ffec;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  #submit-btn {
+    background-color: #27f8ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  #submit-btn:hover {
+    background-color: #63fff7;
+  }
+
+  #regular{
+    font-family: "Chakra Petch", sans-serif;
+
+  }
+  
+  @media (max-width: 600px) {
+    .informacion-contacto {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .detalle-contacto {
+      width: 90%;
+      max-width: 100%;
+    }
+  }
