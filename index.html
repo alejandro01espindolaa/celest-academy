@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <!-- css -->
+    <link rel="stylesheet" href="CSS/carrusel.css">
     <link rel="stylesheet" href="CSS/logoicon.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/index.css"> 
@@ -59,7 +60,48 @@ Academy</h1>
     <!-- welcome -->
 
     <section id="Home">
-
+        <div id="carousel-container">
+            <div id="carousel-slides">
+                <!-- Aquí van las imágenes del carrusel -->
+                <div class="carousel-slide">
+                    <img src="images/prormotionals/adf7e07b-ca5e-43ac-87e6-d4d09476660b.png" alt="Celest Academy Image 1">
+                    <div class="slide-caption">
+                        <h2>Bienvenido a Celest Academy</h2>
+                        <p>Educación de calidad para el futuro</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/prormotionals/students001.png" alt="Celest Academy Image 2">
+                    <div class="slide-caption">
+                        <h2>Aprende a tu ritmo</h2>
+                        <p>Cursos adaptados a tus necesidades</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/prormotionals/students002.png" alt="Celest Academy Image 3">
+                    <div class="slide-caption">
+                        <h2>Instructores expertos</h2>
+                        <p>Aprende con los mejores profesionales</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navegación del carrusel -->
+            <button id="carousel-prev-btn" class="carousel-nav-btn"><i class="fas fa-chevron-left"></i></button>
+            <button id="carousel-next-btn" class="carousel-nav-btn"><i class="fas fa-chevron-right"></i></button>
+            
+            <!-- Contador de slides -->
+            <div id="carousel-counter">
+                <span id="current-slide">1</span>/<span id="total-slides">3</span>
+            </div>
+            
+            <!-- Indicadores de slides -->
+            <div id="carousel-indicators">
+                <button class="indicator-btn active" data-slide="0"></button>
+                <button class="indicator-btn" data-slide="1"></button>
+                <button class="indicator-btn" data-slide="2"></button>
+            </div>
+        </div>
     </section>
 
 
@@ -84,7 +126,7 @@ Academy</h1>
               <input type="text" id="nombre" name="nombre" required>
             </div>
             <div class="campo-formulario">
-              <label for="email">Correo Electrónico</label>
+              <label id = "lab" for="email">Correo Electrónico</label>
               <input type="email" id="email" name="email" required>
             </div>
             <div class="campo-formulario">
@@ -113,13 +155,14 @@ Academy</h1>
 Celest 
 Academy</h1>
                                         </pre>
-                    <p class="footer-about">Me encuentro dispuesto a Trabajar de forma inmediata</p>
+                    <p class="footer-about">De la mano contigo, para el siguiente nivel</p>
                     <div class="social-links">
-                        <a href="https://wa.me/+5219616985795" id="whatsapp-button" target="_blank" class="fab fa-whatsapp"></a>
-                        <a href="https://www.linkedin.com/in/bryan-alejandro-espindola-alba" id="linkedin-button" target="_blank" class="fab fa-linkedin"></a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alejandro01espindolaa@gmail.com" id="email-button" target="_blank" class="fab fa-google"></a>
-                        <a href="https://github.com/alejandro01espindolaa" id="github-button" target="_blank" class="fab fa-github"></a>
-                        <a href="https://drive.google.com/file/d/1u47HeSLmp2-FV6FMBCwO46eVJ_VtWFIF/view?usp=sharing" id="file-button" target="_blank" class="far fa-file-alt"></a>
+                        <a href="https://wa.me/525540081566" id="whatsapp-button" target="_blank" class="fab fa-whatsapp"></a>
+                        <a href="https://www.facebook.com/Celest.Academy" id="linkedin-button" target="_blank" class="fab fa-facebook"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=celest01academy@gmail.com" id="email-button" target="_blank" class="fab fa-google"></a>
+                        <a href="https://github.com/alejandro01espindolaa" id="github-button" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://github.com/alejandro01espindolaa" id="github-button" target="_blank" class="fab fa-tiktok"></a>
+                        <a href="https://drive.google.com/file/d/1u47HeSLmp2-FV6FMBCwO46eVJ_VtWFIF/view?usp=sharing" id="file-button" target="_blank" class="fab fa-youtube"></a>
 
                     </div>
                     <h2 style="color: gray;">Contacto de mis redes sociales</h2>
@@ -154,5 +197,7 @@ Academy</h1>
 
     <script src="JS/index.js"></script>
     <script src="JS/contact.js"></script>
+    <script src="JS/carrusel.js"></script>
+
 </body>
 </html>
