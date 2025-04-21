@@ -33,8 +33,10 @@ body::-webkit-scrollbar-thumb {
     background-clip: padding-box;
 }
 
-#logotit{
+#logotit {
     display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 10px; /* Espacio entre la imagen y el texto */
 }
 
 
@@ -266,5 +268,6 @@ h1{
         border-radius: 5px;
 
     }
-       
+
+ 
 }
