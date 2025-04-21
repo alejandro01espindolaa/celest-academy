@@ -1,0 +1,48 @@
+/* Sección por qué elegirnos */
+.why-choose-section {
+    padding: 1 1 80px ;
+    background: linear-gradient(135deg, #222222, #111111);
+    font-family: "Chakra Petch", sans-serif;
+}
+
+
+
+.why-choose-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.why-choose-card {
+    flex: 1;
+    padding: 30px;
+    background: rgba(40, 40, 40, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.why-choose-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.why-choose-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ff9500;
+}
+
+.why-choose-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.why-choose-description {
+    font-size: 16px;
+    color: #d0d0d0;
+    line-height: 1.6;
+}
