@@ -153,6 +153,13 @@
         font-size: .8;
       }
 
+      p{
+        font-size: .5;
+        padding: 1%;
+        flex: grid;
+        text-align: center;
+      }
+
       #titlec{
         font-size: .7;
       }
