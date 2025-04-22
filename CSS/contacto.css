@@ -153,6 +153,10 @@
         font-size: .8;
       }
 
+      #titlec{
+        font-size: .7;
+      }
+
 
       .detalle-contacto {
         flex: 1 1 100px;

@@ -1,21 +1,20 @@
-/* Sección por qué elegirnos */
+/* Sección why celest academy */
 .why-choose-section {
-    padding: 1 1 80px ;
+    padding: 60px 20px;
     background: linear-gradient(135deg, #222222, #111111);
     font-family: "Chakra Petch", sans-serif;
+    max-width: 100%;
+    position: relative;
 }
 
-
-
 .why-choose-content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 50px;
 }
 
 .why-choose-card {
-    flex: 1;
     padding: 30px;
     background: rgba(40, 40, 40, 0.7);
     border-radius: 10px;
@@ -45,4 +44,28 @@
     font-size: 16px;
     color: #d0d0d0;
     line-height: 1.6;
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 992px) {
+    .why-choose-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-choose-content {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .why-choose-section {
+        padding: 40px 15px;
+    }
+    
+    .why-choose-card {
+        padding: 25px;
+    }
 }
