@@ -1,16 +1,15 @@
 /* Footer */
 footer {
     background: linear-gradient(to right, #141414, #353535);
-    padding: 60px 0 20px;
-    margin-top: 40px;
+    padding: 40px 0 10px; /* REDUCIDO */
+    margin-top: 30px;     /* LIGERAMENTE REDUCIDO */
     font-family: "Chakra Petch", sans-serif;
-    font-weight:bold;
-
+    font-weight: bold;
 }
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px; /* LIGERAMENTE MÁS COMPACTO */
     margin: 0 auto;
 }
 
@@ -18,107 +17,93 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: 30px; /* REDUCIDO */
+    margin-bottom: 30px; /* REDUCIDO */
 }
 
 .footer-column {
     flex: 1;
-    min-width: 200px;
+    min-width: 180px; /* MÁS AJUSTADO */
 }
 
 .footer-logo {
-    font-size: 30px;
+    font-size: 24px; /* REDUCIDO */
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #fff;
 }
 
 .footer-about {
     color: #d0d0d0;
-    font-size: 25px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    font-size: 18px; /* REDUCIDO */
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 .social-links {
     display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 10px; /* REDUCIDO */
+    margin-bottom: 10px;
     flex-wrap: wrap;
 }
 
 .footer-title {
-    font-size: 30px;
+    font-size: 22px; /* REDUCIDO */
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
 }
 
 .footer-title::after {
     content: '';
     position: absolute;
-    width: 40px;
+    width: 35px;
     height: 2px;
     background: linear-gradient(to right, aqua, rgb(101, 255, 255));
     bottom: 0;
     left: 0;
-        font-family: "Chakra Petch", sans-serif;
-
 }
 
 .footer-links {
     list-style: none;
-    font-size: 25px;
-    font-family: "Chakra Petch", sans-serif;
-
-
+    font-size: 18px; /* REDUCIDO */
 }
 
 .footer-links li {
-    margin-bottom: 10px;
-
-    
+    margin-bottom: 6px; /* REDUCIDO */
 }
 
 .footer-links a {
     color: #d0d0d0;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 18px; /* REDUCIDO */
     transition: all 0.3s;
     position: relative;
-    padding-left: 15px;
-}
-
-.footer-links a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    color: aqua;
+    padding-left: 12px;
 }
 
 .footer-links a:hover {
     color: aqua;
-    padding-left: 20px;
+    padding-left: 16px;
 }
 
 .footer-column h4 {
     color: #d0d0d0;
-    margin-top: 10px;
+    margin-top: 8px;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
     border-top: 1px solid #444;
 }
 
 .footer-bottom p {
     color: #a0a0a0;
-    
+    font-size: 13px; /* REDUCIDO */
 }
 
 /* Responsive */
@@ -126,43 +111,24 @@ footer {
     .footer-content {
         flex-direction: column;
     }
-    
+
     .footer-column {
         width: 100%;
     }
 
     .footer-links a {
-        color: #d0d0d0;
-        text-decoration: none;
-        font-size: .6em;
-        transition: all 0.6s;
-        position: relative;
-        padding-left: 15px;
+        font-size: 0.85em;
     }
 
-    .footer-bottom p {
-        color: #a0a0a0;
-        font-size: .7em;
-
+    .footer-about {
+        font-size: 16px;
     }
 
     .footer-title {
         font-size: 18px;
-       
     }
 
-    h2{
-        font-size: 18px;
+    .footer-bottom p {
+        font-size: 0.75em;
     }
-
-    .footer-about {
-    
-        font-size: 20px;
-    }
-    
-
-    
-
-
-
 }
