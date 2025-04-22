@@ -93,12 +93,12 @@
     font-size: 1.2em;
     transition: background-color 0.3s;
     font-weight: lig;
-    font-family: "Chakra Petch", sans-serif;
+    font-family: "Bruno Ace SC", sans-serif;
 
   }
   
   #submit-btn:hover {
-    background-color: #63fff7;
+    background-color: #9bfffa;
   }
 
   #regular{
@@ -156,8 +156,10 @@
       p{
         font-size: .5;
         padding: 1%;
-        flex: grid;
-        text-align: center;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        
       }
 
       #titlec{
