@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="CSS/contacto.css">
     <link rel="icon" href="images/logos/IMG_1306.PNG" type="image/x-icon">
     <link rel="stylesheet" href="CSS/why.css">
+    <link rel="stylesheet" href="CSS/chatbot.css">
 
 </head>
 <body>
@@ -221,6 +222,44 @@ Academy</h1>
             </div>
         </div>
     </footer>
+
+
+    
+                <!-- Botón flotante del chatbot -->
+                <div id="chat-button" class="chat-button">
+                    <i class="fas fa-comments"></i>
+                </div>
+
+                <!-- Ventana del chatbot -->
+                <div id="chat-window" class="chat-window hidden">
+                    <div class="chat-header">
+                        <div class="chat-title">
+                            <img src="/images/logos/IMG_1306.PNG" alt="Logo CA" class="chat-logo">
+                            <span>Asistente Celest Academy</span>
+                        </div>
+                        <div class="chat-controls">
+                            <button id="restart-chat" class="control-button restart-button" title="Reiniciar chat">
+                                <i class="fas fa-redo-alt"></i>
+                            </button>
+                            <button id="minimize-chat" class="control-button minimize-button" title="Minimizar">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat-body" id="chat-body">
+                        <div class="message bot">
+                            <div class="message-content">
+                                <p>¡Hola! Soy el asistente virtual de Celest Academy. ¿Cômo te puedo ayudar?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí...">
+                        <button id="send-button" class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
     
 
 
@@ -228,6 +267,7 @@ Academy</h1>
     <script src="JS/index.js"></script>
     <script src="JS/contact.js"></script>
     <script src="JS/carrusel.js"></script>
+    <script src="JS/chatbot.js"></script>
 
 </body>
 </html>
