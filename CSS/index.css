@@ -1,14 +1,8 @@
+/* HEADER GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-#mainlogo{
-    width: 12em;
-    flex-shrink: 0; /* Evita que la imagen se encoja */
-    border-radius: 15px;
-    object-fit: cover;
 }
 
 body {
@@ -16,108 +10,75 @@ body {
     overflow-x: hidden;
     padding-top: 1%;
     overflow-y: auto;
+    background-color: black;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-    background: transparent; /* Fondo transparente */
+    background: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: aqua; /* Scroll naranja */
+    background-color: aqua;
     border-radius: 10px;
-    border: 3px solid transparent; /* Para dar un efecto más limpio */
+    border: 3px solid transparent;
     background-clip: padding-box;
 }
 
-#logotit {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    gap: 10px; /* Espacio entre la imagen y el texto */
-}
-
-
-
-body{
-    background-color: black;
-}
-
-
-
+/* NAVBAR */
 #navbar {
-    
     display: flex;
-    justify-content:space-between;
-
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(170deg, #000000, #1b1b1b);
-    padding: 1%;
+    padding: 0.5rem 1rem; /* REDUCIDO */
     border-style: double;
-    border-color: rgb(60, 255, 255);  
+    border-width: 2px;
+    border-color: rgb(60, 255, 255);
     border-radius: 15px;
 }
 
-
-#navbar a {
-    color: rgb(101, 255, 255);
-    text-decoration: none;
-    position: relative;
-   
+/* LOGO */
+#mainlogo {
+    width: 9em; /* REDUCIDO */
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-#navbar a:hover {
-    color: rgb(199, 255, 255);
-    transition: width 0.3s;
+/* TITULO */
+#logotit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-
-#navbar a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background:  rgb(199, 255, 255);
-    color:  rgb(199, 255, 255);
-    left: 0;
-    bottom: 0;
-    transition: width 0.4s;
-    
-}
-
-#navbar a:hover::after {
-    width: 100%;
-}
-
 
 #estelar {
-    padding-left: 2%;
-    padding-right: 2%; 
+    padding-left: 1.5%;
+    padding-right: 1.5%;
     font-family: "Bruno Ace SC", sans-serif;
-    font-size: 2.8em;
+    font-size: 2.2em; /* REDUCIDO */
     font-weight: 400;
     font-style: normal;
     color: aqua;
 }
 
-#menubtn{
+/* BOTÓN MENU */
+#menubtn {
     color: aqua;
     background-color: rgb(19, 19, 19);
     border-radius: 10px;
-    border-width: 3px;
+    border-width: 2px; /* REDUCIDO */
     border-style: double;
     border-color: aqua;
-    font-size: 2.5em;
-    padding: .8%;
-    padding-left: .5%;
-    padding-right: .5%;
+    font-size: 1.8em; /* REDUCIDO */
+    padding: 0.4em 0.6em; /* REDUCIDO */
     z-index: 1001;
-    width: auto;
-    height: auto;
     cursor: pointer;
     font-family: "Alumni Sans Pinstripe", sans-serif;
-
 }
 
 #menubtn:hover {
@@ -133,16 +94,16 @@ body{
     transform: rotate(180deg);
 }
 
-
-#navmenu{
+/* MENU LATERAL */
+#navmenu {
     position: fixed;
-    top:  0;
-    right: -300px;
-    width: 300px;
+    top: 0;
+    right: -250px; /* REDUCIDO */
+    width: 250px;
     height: 100vh;
     background: linear-gradient(135deg, #000000, #111);
     padding-top: 80px;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 1000;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
 }
@@ -158,21 +119,18 @@ body{
 #navmenu ul li {
     margin: 20px 0;
     padding: 0 30px;
-    list-style-type: none; 
-    
 }
 
 #navmenu ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 200%;
+    font-size: 150%; /* REDUCIDO */
     font-weight: lighter;
     font-family: "Chakra Petch", sans-serif;
     transition: all 0.3s;
     position: relative;
     padding: 5px 0;
     display: block;
-
 }
 
 #navmenu ul li a:hover {
@@ -194,25 +152,26 @@ body{
     width: 100%;
 }
 
-#lil{
+/* TEXTO DE NAVEGACIÓN */
+#lil {
     font-family: "Chakra Petch", sans-serif;
     color: white;
-    font-size: 250%;
+    font-size: 180%; /* REDUCIDO */
     font-weight: 150;
 }
 
-a{
+/* LINKS GENERALES */
+a {
     text-decoration: none;
     color: inherit;
 }
 
-a:hover{
+a:hover {
     color: #ffcc00;
     transition: all 0.6s;
-
 }
 
-a::after{
+a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -223,51 +182,41 @@ a::after{
     transition: width 0.3s ease;
 }
 
-h1{
+/* HEADINGS */
+h1 {
     font-family: "Alumni Sans Pinstripe", sans-serif;
-
 }
 
+/* RESPONSIVE MOBILE */
 @media (max-width: 768px) {
     #estelar {
-      
         font-size: 175%;
-        font-weight:bold  ;
-    
+        font-weight: bold;
     }
 
-    #menubtn{
-     
+    #menubtn {
         border-color: aqua;
         font-size: 250%;
         font-family: "Alumni Sans Pinstripe", sans-serif;
         align-items: center;
-
-        
     }
-
 
     #navmenu ul li a {
         font-size: 150%;
     }
 
-    #lil{
+    #lil {
         font-family: "Chakra Petch", sans-serif;
         color: white;
         font-size: 200%;
         font-weight: 150;
     }
-    
-   
 
-    #mainlogo{
+    #mainlogo {
         display: flex;
         height: 20%;
         width: 20%;
         align-items: center;
         border-radius: 5px;
-
     }
-
- 
 }
