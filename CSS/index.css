@@ -11,6 +11,8 @@ body {
     padding-top: 1%;
     overflow-y: auto;
     background-color: black;
+    background-color: radial-gradient(circle, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0) 70%);
+
 }
 
 body::-webkit-scrollbar {
@@ -33,7 +35,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(170deg, #000000, #1b1b1b);
+    background: linear-gradient(170deg, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0));
     padding: 0.5rem 1rem; /* REDUCIDO */
     border-style: double;
     border-width: 2px;
@@ -92,6 +94,8 @@ body::-webkit-scrollbar-thumb {
 #menubtn.active {
     color: rgb(101, 255, 255);
     transform: rotate(180deg);
+    border-color: rgb(60, 255, 255);
+
 }
 
 /* MENU LATERAL */
@@ -101,7 +105,7 @@ body::-webkit-scrollbar-thumb {
     right: -250px; /* REDUCIDO */
     width: 250px;
     height: 100vh;
-    background: linear-gradient(135deg, #000000, #111);
+    background: linear-gradient(135deg, rgb(0, 22, 22), #111111);
     padding-top: 80px;
     transition: 0.5s;
     z-index: 1000;

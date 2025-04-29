@@ -30,34 +30,32 @@
 
     <!-- header -->
 
-    <section id="heading">
-        <header>
-            <div id="navbar">
-                <div id="logotit">
-                    <img src="images/logos/IMG_1306.PNG" id="mainlogo" >
-                <pre>
-<h1 id="estelar">
-Celest 
-Academy</h1>
-                </pre>
-                </div>
-            
-                
-             
-                <button id="menubtn">☰</button>  
+<section id="heading">
+    <header>
+        <div id="navbar">
+            <div id="logotit">
+                <img src="images/logos/IMG_1306.PNG" id="mainlogo" alt="Celest Academy Logo">
+                <h1 id="estelar">Celest Academy</h1>
             </div>
-            <nav id="navmenu">
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Nosotros-M&V">Acerca de nosotros</a></li>
-                    <li><a href="#Login">Login</a></li>
-                    <li><a href="#Promociones">Promociones</a></li>
-                    <li><a href="#Preguntas y Respeustas">Preguntas y Respeustas</a></li>
-                    <li><a href="#Contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
+            
+            <button id="menubtn" aria-label="Toggle menu">☰</button>  
+        </div>
+        
+        <nav id="navmenu">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Nosotros-M&V">Acerca de nosotros</a></li>
+                <li><a href="#Login">Login</a></li>
+                <li><a href="#Promociones">Promociones</a></li>
+                <li><a href="#Preguntas-y-Respuestas">Preguntas y Respuestas</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Overlay for menu background -->
+        <div class="menu-overlay"></div>
+    </header>
+</section>
 
     <!-- welcome -->
 
@@ -313,51 +311,73 @@ Academy</h1>
 
 
        <!-- Footer -->
-       <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <pre>
-<h1 id="estelar">
-Celest 
-Academy</h1>
-</pre>
-                    <p class="footer-about">"De la mano contigo, para el siguiente nivel"</p>
-                    <div class="social-links">
-                        <a href="https://wa.me/525540081566" id="whatsapp-button" target="_blank" class="fab fa-whatsapp"></a>
-                        <a href="https://www.facebook.com/Celest.Academy" id="linkedin-button" target="_blank" class="fab fa-facebook"></a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=celest01academy@gmail.com" id="email-button" target="_blank" class="fab fa-google"></a>
-<a href="https://github.com/alejandro01espindolaa" id="github-button" target="_blank" class="fab fa-github"></a>
-                        <a href="https://drive.google.com/file/d/1u47HeSLmp2-FV6FMBCwO46eVJ_VtWFIF/view?usp=sharing" id="file-button" target="_blank" class="fab fa-youtube"></a>
-
-                    </div>
-                    <h2 style="color: gray;">Contacto de mis redes sociales</h2>
+<!-- Footer Section -->
+<footer>
+    <!-- Grid background effect -->
+    <div class="footer-bg"></div>
+    
+    <div class="container">
+        <div class="footer-content">
+            <!-- First Column: Logo and Social Links -->
+            <div class="footer-column">
+                <h1 id="estelar">Celest Academy</h1>
+                <p class="footer-about">"De la mano contigo, para el siguiente nivel"</p>
+                
+                <div class="social-links">
+                    <a href="https://wa.me/525540081566" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Celest.Academy" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=celest01academy@gmail.com" target="_blank" title="Email">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://github.com/alejandro01espindolaa" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1u47HeSLmp2-FV6FMBCwO46eVJ_VtWFIF/view?usp=sharing" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
-                
-                <div class="footer-column">
-                    <h3 class="footer-title">Enlaces Rápidos</h3>
-                    <ul class="footer-links">
-                        <li><a href="#navbar">Ir arriba ⇪</a></li>
-                        <li><a href="#Profile">Perfil</a></li>
-                        <li><a href="#Education">Educacion</a></li>
-                        <li><a href="#my-resume">Trayectoria</a></li>
-                        <li><a href="#skills">Habilidades & Habilidades blandas</a></li>
-                        <li><a href="#why-me">Porque alejandro</a></li>
-                        <li><a href="#contacto">Contacto</a></li>                        
-
-                    </ul>
-                </div>
-                
-                
+                <h2>Contacto de mis redes sociales</h2>
             </div>
             
-            <div class="footer-bottom">
-                <p>Todos los derechos reservados de este sitio pertenecen a Alejandro Espindola.</p>
-                <p>Diseñado creado y codificado por Alejandro Espindola.</p>
+            <!-- Second Column: Quick Links -->
+            <div class="footer-column">
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#navbar">Ir arriba ⇪</a></li>
+                    <li><a href="#Profile">Perfil</a></li>
+                    <li><a href="#Education">Educación</a></li>
+                    <li><a href="#my-resume">Trayectoria</a></li>
+                    <li><a href="#skills">Habilidades & Habilidades blandas</a></li>
+                    <li><a href="#why-me">Porque alejandro</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Third Column: Courses or Info -->
+            <div class="footer-column">
+                <h3 class="footer-title">Nuestros Cursos</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Inglés Básico</a></li>
+                    <li><a href="#">Inglés Intermedio</a></li>
+                    <li><a href="#">Inglés Avanzado</a></li>
+                    <li><a href="#">Preparación TOEFL</a></li>
+                    <li><a href="#">Inglés de Negocios</a></li>
+                    <li><a href="#">Conversación</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
-
+        
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>Todos los derechos reservados de este sitio pertenecen a Alejandro Espindola.</p>
+            <p>Diseñado, creado y codificado por Alejandro Espindola.</p>
+        </div>
+    </div>
+</footer>
 
     
                 <!-- Botón flotante del chatbot -->
