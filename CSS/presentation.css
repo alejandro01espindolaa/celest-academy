@@ -1,0 +1,269 @@
+
+/* Variables globales */
+:root {
+    --celest-primary: #00ffff; /* Color aqua */
+    --celest-dark: #121212;
+    --celest-light: #ffffff;
+    --celest-accent: #9900ff; /* Color complementario para acentos */
+    --celest-gradient: linear-gradient(135deg, #00ffff, #9900ff);
+    --celest-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+}
+
+/* Estilos principales de la sección */
+#presentacion-celest {
+    position: relative;
+    padding: 80px 20px;
+    overflow: hidden;
+    font-family: "Chakra Petch", sans-serif;
+    color: var(--celest-light);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor del fondo */
+.background-celest-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Imagen de fondo */
+.background-celest {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%) contrast(1.2) saturate(1.2);
+    animation: pulse 10s infinite alternate;
+    pointer-events: none;
+}
+
+/* Contenedor principal */
+#contenedor-celest {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título con efecto neón */
+#titulo-celest {
+    font-size: 3.5em;
+    color: var(--celest-light);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin-bottom: 60px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    box-shadow: 0 0 10px var(--celest-primary), 0 0 20px var(--celest-primary);
+    border: 2px solid var(--celest-primary);
+    text-shadow: 0 0 5px var(--celest-primary), 0 0 10px var(--celest-primary);
+    animation: neon 1.5s infinite alternate;
+}
+
+/* Contenedor de tarjetas */
+.celest-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Estilo de las tarjetas */
+.celest-card {
+    background: rgba(18, 18, 18, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    width: 340px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.celest-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--celest-shadow);
+    border-color: var(--celest-primary);
+}
+
+.celest-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--celest-gradient);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.celest-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Íconos en tarjetas */
+.card-icon {
+    font-size: 2.5em;
+    color: var(--celest-primary);
+    margin-bottom: 20px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.celest-card:hover .card-icon {
+    transform: rotateY(360deg);
+    background: var(--celest-primary);
+    color: var(--celest-dark);
+}
+
+/* Títulos de tarjetas */
+.celest-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--celest-primary);
+    font-weight: 600;
+}
+
+/* Texto en tarjetas */
+.celest-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Botón de llamada a la acción */
+.celest-cta {
+    margin-top: 20px;
+}
+
+.celest-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--celest-gradient);
+    color: var(--celest-light);
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.celest-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #9900ff, #00ffff);
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.celest-btn:hover {
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+.celest-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Animaciones */
+@keyframes neon {
+    from {
+        box-shadow: 0 0 10px var(--celest-primary), 0 0 20px var(--celest-primary);
+        text-shadow: 0 0 5px var(--celest-primary), 0 0 10px var(--celest-primary);
+    }
+    to {
+        box-shadow: 0 0 15px var(--celest-primary), 0 0 30px var(--celest-primary), 0 0 45px var(--celest-primary);
+        text-shadow: 0 0 10px var(--celest-primary), 0 0 20px var(--celest-primary), 0 0 30px var(--celest-primary);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        filter: brightness(30%) contrast(1.2) saturate(1.2);
+    }
+    100% {
+        filter: brightness(35%) contrast(1.3) saturate(1.3);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+    .celest-cards-container {
+        gap: 20px;
+    }
+    
+    .celest-card {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #titulo-celest {
+        font-size: 2.5em;
+    }
+    
+    .celest-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .celest-card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #presentacion-celest {
+        padding: 60px 15px;
+    }
+    
+    #titulo-celest {
+        font-size: 2em;
+        padding: 10px 20px;
+    }
+    
+    .celest-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}

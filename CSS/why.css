@@ -1,71 +1,273 @@
-/* Sección why celest academy */
-.why-choose-section {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #222222, #111111);
-    font-family: "Chakra Petch", sans-serif;
-    max-width: 100%;
-    position: relative;
+:root {
+    --celest-primary: #00ffff; /* Color aqua */
+    --celest-dark: #121212;
+    --celest-light: #ffffff;
+    --celest-accent: #9900ff; /* Color complementario para acentos */
+    --celest-gradient: linear-gradient(135deg, #00ffff, #9900ff);
+    --celest-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
 }
 
+/* Estilos de la sección */
+.why-choose-section {
+    position: relative;
+    padding: 100px 20px;
+    background-color: #080c14;
+    overflow: hidden;
+    font-family: "Chakra Petch", sans-serif;
+    min-height: 80vh;
+}
+
+/* Elementos de fondo */
+.why-choose-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.why-choose-circle {
+    position: absolute;
+    top: -250px;
+    right: -250px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0) 70%);
+    animation: pulse-circle 15s infinite alternate;
+}
+
+.why-choose-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(0deg, transparent 24%, rgba(0, 255, 255, 0.05) 25%, rgba(0, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 255, 255, 0.05) 75%, rgba(0, 255, 255, 0.05) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, rgba(0, 255, 255, 0.05) 25%, rgba(0, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 255, 255, 0.05) 75%, rgba(0, 255, 255, 0.05) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+}
+
+/* Contenedor */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Título de la sección */
+.titulo-seccion {
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--celest-light);
+    margin-bottom: 60px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 15px;
+}
+
+.titulo-seccion::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--celest-gradient);
+    border-radius: 3px;
+}
+
+/* Contenedor de tarjetas */
 .why-choose-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px;
-    margin-top: 50px;
+    justify-content: center;
 }
 
+/* Tarjetas */
 .why-choose-card {
-    padding: 30px;
-    background: rgba(40, 40, 40, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(11, 17, 31, 0.7);
+    border-radius: 15px;
+    padding: 35px 25px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    transform: translateY(0);
+    animation: card-appear 0.8s ease-out forwards;
+    opacity: 0;
 }
+
+/* Aplicar animación con retraso diferente para cada tarjeta */
+.why-choose-card:nth-child(1) { animation-delay: 0.1s; }
+.why-choose-card:nth-child(2) { animation-delay: 0.3s; }
+.why-choose-card:nth-child(3) { animation-delay: 0.5s; }
+.why-choose-card:nth-child(4) { animation-delay: 0.7s; }
 
 .why-choose-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--celest-primary);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.2);
 }
 
-.why-choose-icon {
-    font-size: 40px;
+/* Efecto hover */
+.card-hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--celest-gradient);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin: left;
+}
+
+.why-choose-card:hover .card-hover-effect {
+    transform: scaleX(1);
+}
+
+/* Contenedor del icono */
+.why-choose-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(0, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
-    color: #ff9500;
+    position: relative;
+    overflow: hidden;
 }
 
+.why-choose-icon-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--celest-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.why-choose-card:hover .why-choose-icon-wrapper::before {
+    opacity: 0.8;
+}
+
+/* Icono */
+.why-choose-icon {
+    font-size: 2.5rem;
+    color: var(--celest-primary);
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.why-choose-card:hover .why-choose-icon {
+    color: var(--celest-light);
+    transform: scale(1.1);
+}
+
+/* Título de la tarjeta */
 .why-choose-title {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #fff;
+    font-size: 1.5rem;
+    color: var(--celest-primary);
+    margin: 15px 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
+.why-choose-card:hover .why-choose-title {
+    transform: translateY(-5px);
+}
+
+/* Descripción de la tarjeta */
 .why-choose-description {
-    font-size: 16px;
-    color: #d0d0d0;
+    font-size: 1rem;
+    color: #dfdfdf;
     line-height: 1.6;
 }
 
-/* Media queries para dispositivos móviles */
+/* Animaciones */
+@keyframes pulse-circle {
+    0% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes card-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
 @media screen and (max-width: 992px) {
+    .titulo-seccion {
+        font-size: 2.4rem;
+    }
+    
     .why-choose-content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
 }
 
 @media screen and (max-width: 768px) {
-    .why-choose-content {
-        grid-template-columns: 1fr;
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
+    .why-choose-section {
+        padding: 70px 15px;
     }
     
-    .why-choose-section {
-        padding: 40px 15px;
+    .titulo-seccion {
+        font-size: 2rem;
     }
     
     .why-choose-card {
-        padding: 25px;
+        padding: 25px 20px;
+    }
+    
+    .why-choose-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .titulo-seccion {
+        font-size: 1.8rem;
+    }
+    
+    .why-choose-content {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 0 auto;
     }
 }
