@@ -33,8 +33,7 @@
 
 /* Estilos al pasar el cursor sobre los botones */
 #email-button:hover, #github-button:hover, #file-button:hover, #whatsapp-button:hover, #linkedin-button:hover {
-    background: linear-gradient(135deg, #9900ff, #00ffff);
-
+    color: rgb(140, 247, 247);
     transition: 0.6s;
     padding: 1%;
 }
@@ -45,7 +44,7 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #9900ff, #00ffff);
+    background: linear-gradient(to right , rgb(156, 255, 255),aqua);
     left: 0;
     bottom: 0;
     transition: width 0.5s;

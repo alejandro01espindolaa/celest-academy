@@ -35,10 +35,26 @@
   #chat-button:hover {
     background:  #00ffff;
     color: #121212;
-    transition: .8s;
+    transition: .6s;
     transform: scale(1.1);
     box-shadow: 0 0 20px var(--celest-gradient);
   }
+
+  .chat-body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .chat-body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .chat-body::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+  }
+
   
   /* Ventana del chatbot */
   .chat-window {
@@ -174,7 +190,7 @@
   .chat-controls button:hover {
     opacity: 1;
     color: #00ffff;
-    transition: 1s;
+    transition: .5s;
   }
   
   /* Cuerpo del chat */
@@ -260,7 +276,7 @@
     background:  #00ffff;
     color: #121212;
     transform-origin: left;
-    transition: .8s;
+    transition: .6s;
   }
   
   @keyframes spin {
