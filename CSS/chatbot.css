@@ -33,6 +33,9 @@
   }
   
   #chat-button:hover {
+    background:  #00ffff;
+    color: #121212;
+    transition: .8s;
     transform: scale(1.1);
     box-shadow: 0 0 20px var(--celest-gradient);
   }
@@ -170,6 +173,8 @@
   
   .chat-controls button:hover {
     opacity: 1;
+    color: #00ffff;
+    transition: 1s;
   }
   
   /* Cuerpo del chat */
@@ -252,10 +257,10 @@
   }
   
   .send-button:hover {
-    background: linear-gradient(135deg, #9900ff, #00ffff);
-    transition: 0.3s;
-    transform: translateY(-3px);
-
+    background:  #00ffff;
+    color: #121212;
+    transform-origin: left;
+    transition: .8s;
   }
   
   @keyframes spin {
