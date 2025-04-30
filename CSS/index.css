@@ -212,6 +212,8 @@ h1 {
         font-size: 250%;
         font-family: "Alumni Sans Pinstripe", sans-serif;
         align-items: center;
+        padding: 0.1em 0.25em;
+
     }
 
     #navmenu ul li a {
