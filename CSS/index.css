@@ -71,7 +71,7 @@ body::-webkit-scrollbar-thumb {
 /* BOTÓN MENU */
 #menubtn {
     color: aqua;
-    background-color: rgb(19, 19, 19);
+    background: linear-gradient(170deg, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0));
     border-radius: 10px;
     border-width: 2px; /* REDUCIDO */
     border-style: double;
@@ -85,11 +85,20 @@ body::-webkit-scrollbar-thumb {
 
 #menubtn:hover {
     color: rgb(101, 255, 255);
-    background-color: #444444;
+    background: linear-gradient(170deg, rgba(0, 255, 255, 0.226) 0%, rgba(0, 255, 255, 0.164));
     border-color: rgb(101, 255, 255);
     border-style: double;
-    transition: 0.3s;
+    transition: 0.5s;
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6);
+
+
 }
+
+
+#menubtn:hover::before {
+    transform: scaleX(1);
+}
+
 
 #menubtn.active {
     color: rgb(101, 255, 255);

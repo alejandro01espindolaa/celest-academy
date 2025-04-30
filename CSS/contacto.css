@@ -8,6 +8,8 @@
   --celest-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
   --celest-form-bg: rgba(22, 28, 36, 0.8); /* Fondo del formulario */
   --celest-card-bg: rgba(22, 28, 36, 0.6); /* Fondo de las tarjetas */
+  --darklinear: linear-gradient(135deg, #00292c, #000a0a);
+
 }
 
 /* Base de la sección */
@@ -283,7 +285,7 @@
 
 /* Botón de envío */
 #submit-btn {
-  background: var(--celest-gradient);
+  background: var(--darklinear);
   color: var(--celest-light);
   border: none;
   padding: 15px 30px;
@@ -332,6 +334,7 @@
 #submit-btn:hover {
   box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3);
   transform: translateY(-3px);
+  transition: 0.3s;
 }
 
 #submit-btn:hover::before {

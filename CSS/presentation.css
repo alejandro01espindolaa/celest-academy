@@ -7,6 +7,8 @@
     --celest-accent: #9900ff; /* Color complementario para acentos */
     --celest-gradient: linear-gradient(135deg, #00ffff, #9900ff);
     --celest-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+    --darklinear: linear-gradient(135deg, #00292c, #000a0a);
+
 }
 
 /* Estilos principales de la sección */
@@ -164,7 +166,7 @@
 .celest-btn {
     display: inline-block;
     padding: 15px 30px;
-    background: var(--celest-gradient);
+    background: var(--darklinear);
     color: var(--celest-light);
     font-family: "Chakra Petch", sans-serif;
     font-size: 1.2em;
